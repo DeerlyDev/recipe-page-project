@@ -1,4 +1,4 @@
-/* Reset default margin, padding, and box-sizing for all elements */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +7,12 @@
 
 /* Style for horizontal rule */
 hr {
-  border: 0; /* Remove default border */
-  border-top: 1px solid #d3d3d3; /* Set a light grey color */
-  height: 1px; /* Make the line thinner */
+  border: 0;
+  border-top: 1px solid #d3d3d3;
+  height: 1px;
 }
 
-/* Define color and font variables */
+/*color and font variables */
 :root {
   --color-white: hsl(0, 0%, 100%);
 
@@ -45,7 +45,6 @@ article.recipe-article {
   background-color: var(--color-white);
   font-family: var(--font-outfit);
   color: var(--color-stone-600);
-  border-radius: 20px;
 }
 
 /* Style for the image inside the article */
@@ -65,6 +64,10 @@ article.recipe-article {
     padding: 40px;
   }
 
+  .recipe-article {
+    border-radius: 20px;
+  }
+
   /* Style for the image wrapper */
   .image-wrapper {
     padding: 40px 40px 0 40px;
@@ -73,6 +76,10 @@ article.recipe-article {
 
   .image-wrapper img {
     border-radius: inherit;
+  }
+
+  .attribution {
+    font-size: 1.1rem;
   }
 }
 
@@ -96,32 +103,32 @@ article.recipe-article {
 }
 
 /* Style for the preparation section */
-.preperation-section {
+.preparation-section {
   background-color: var(--color-rose-50);
   padding: 20px;
   margin-bottom: 30px;
   border-radius: 10px;
 }
 
-.preperation-section h2 {
+.preparation-section h2 {
   font-size: 1.2rem;
   color: var(--color-rose-800);
   margin-bottom: 10px;
 }
 
-.preperation-section ul {
+.preparation-section ul {
   padding: 0 25px 0 25px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.preperation-section ul li::marker {
+.preparation-section ul li::marker {
   color: var(--color-rose-800);
   font-size: 12px;
 }
 
-.preperation-section ul li {
+.preparation-section ul li {
   padding-left: 10px;
   line-height: 1.5;
 }
@@ -226,4 +233,12 @@ td strong {
 
 tr:last-child td {
   border-bottom: none;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--color-stone-600);
+  margin-top: 50px;
+  padding: 20px 0;
 }
